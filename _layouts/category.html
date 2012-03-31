@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<meta name="robots" content="follow,index" />
+		<meta name="keywords" content="Java,J2EE,IZND,宅男,宅女,GIT,GITHUB,{{ page.title }}" />
+        <meta name="description" content="Category {{ page.title }}"/>
+		<meta name="author" content="Poison,一抹毒药" />
+        <meta name="copyright" content="i 宅男(女) 地" />
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="http://feed.feedsky.com/nshen">
+		<link rel="stylesheet" type="text/css" href="/css/style.css" />
+		<link rel="stylesheet" type="text/css" href="/css/syntax.css" />
+	</head>
+
+	<body>
+		<div id="logo"><h1><a href="/">i 宅男(女) 地</a></h1></div>
+		<div id="wrapper">
+			<div id="content" class="index">
+				<div id="sidebar">
+					<ul>
+					<!--
+						<li>
+							<a href="#">ARTICLES</a>
+							<ul>
+								{% for category in site.categories %}
+								<li><a href="/{{ category[0]  }}.html"> {{ category[0]  }}</a></li>
+								{% endfor %}
+							</ul>
+						</li>
+					-->
+						<li><a href="/index.html">我的文章</a></li>
+						<li><a href="/projects.html">我的项目</a></li>
+						<li><a href="/about.html">关于我</a></li>
+						<li><a href="/links.html">友情链接</a></li>
+						
+					</ul>
+				</div>
+				
+				<div id="main">
+					<h1>CATEGORY » {{ page.title }}</h1>
+					{{ content }}
+				</div>
+            </div>
+		</div>	
+
+	</body>
+</html>
+
+
