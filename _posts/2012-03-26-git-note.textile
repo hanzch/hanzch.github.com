@@ -4,7 +4,7 @@ title: 笔记《版本控制之道--使用Git》
 category: dataStructure
 ---
 本文引自NSHEN博客，转载请注明出处:
-http://www.nshen.net/sitelog/2011/08/03/git-note.html
+http://www.nshen.net/dataStructure/2011/08/03/git-note.html
 
 
 我认为每个学过Git的人都应该做过类似这种笔记，因为Git命令太多看着看着就把前边看过的忘了，之前我也看过Git，但是一直没用，现在一看几乎没有印象了，所以这次我要把我看到的命令记下来给我自己备忘。

@@ -4,14 +4,14 @@ layout: nil
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>i 宅男(女) 地</title>
+ <title>信息地带新动向 —— Information Zone New Developments</title>
  <link href="http://www.iznd.com/atom.xml" rel="self"/>
  <link href="http://www.iznd.com/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
  <id>http://www.iznd.com/</id>
  <author>
    <name>Poison</name>
-   <email>icydie@qq.com</email>
+   <email>i#iznd.com</email>
  </author>
 
  {% for post in site.posts limit:20 %}
