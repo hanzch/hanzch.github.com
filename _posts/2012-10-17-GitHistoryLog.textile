@@ -1,0 +1,56 @@
+---
+layout: post
+title: 立文为证
+category: log
+---
+本文为原创日志，转载请注明出处:
+http://www.iznd.com/log/2012/10/16/MyWord.html
+
+
+本文主要针对，GitHub历史记录过多，造成某些（譬如本人）洁癖患者的各种不适...
+
+假设我们的 commit tree 如下：
+
+R–A–B–C–D–E–HEAD
+
+准备工作：
+
+{% highlight console %}
+ rm -rf .git test.txt
+
+ touch test.txt && git init && git add .
+ echo "R" >> test.txt && git ci -a -m "R"
+ echo "A" >> test.txt && git ci -a -m "A"
+ echo "B" >> test.txt && git ci -a -m "B"
+ echo "C" >> test.txt && git ci -a -m "C"
+ echo "D" >> test.txt && git ci -a -m "D"
+ echo "E" >> test.txt && git ci -a -m "E"
+{% endhighlight %}
+
+接下来要移除 B 跟 C 的 commit tree，变成 R–A-D–E–HEAD
+
+
+{% highlight console %}
+# detach head and move to D commit
+git checkout <SHA1-for-D>
+
+# move HEAD to A, but leave the index and working tree as for D
+git reset --soft <SHA1-for-A>
+
+# Redo the D commit re-using the commit message, but now on top of A
+git commit -C <SHA1-for-D>
+
+# Re-apply everything from the old D onwards onto this new place 
+git rebase --onto HEAD <SHA1-for-D> master
+
+# push it
+git push --force
+{% endhighlight %}
+
+
+
+
+
+
+
+
