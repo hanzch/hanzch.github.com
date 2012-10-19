@@ -1,0 +1,23 @@
+---
+layout: post
+title: wp.index.php
+category: dataStructure
+---
+本文为原创日志，转载请注明出处:
+http://www.iznd.com/dataStructure/2012/10/18/wp.index.php.html
+
+
+{% highlight console %}
+define('WP_USE_THEMES', true);
+#define 声明常量（参数名，值）
+#声明常量WP_USE_THEMES，值为true。
+
+
+/** Loads the WordPress Environment and Template */
+require('./wp-blog-header.php');
+#包含并运行指定文件，同include，不同页面丢失时，require停止执行。
+#包含并执行根目录下wp-blog-header.php。
+
+{% endhighlight %}
+
+

@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Godaddy域名注册相关
-category: log
+category: dataStructure
 ---
 本文为原创日志，转载请注明出处:
-http://www.iznd.com/log/2012/10/18/GodaddyDomain.html
+http://www.iznd.com/dataStructure/2012/10/18/GodaddyDomain.html
 
 
 最近由于业务需要，将选择在国外注册域名，经过多家对比，最终选择了Godaddy。
