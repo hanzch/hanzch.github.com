@@ -1,3 +1,4 @@
 markdown: rdiscount
 pygments: true
-url:http://iznd.com
+auto: true
+url: http://iznd.com
