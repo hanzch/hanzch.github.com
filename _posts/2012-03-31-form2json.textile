@@ -3,10 +3,6 @@ layout: post
 title: Form2JSON
 category: log
 ---
-本文为原创日志，转载请注明出处:
-http://www.iznd.com/log/2012/03/31/form2json.html
-
-
 最近手头上在做一个项目其中用到了Spring MVC,感觉还是各种不错的。当然这不是重点，同时页面表单提交部分需要用到Ajax。当然这个也不是重点，重点是在这两个前提下，数据结构关系是多对多。类似：Student and Teacher。换句话说，一个学生可以有多个老师（三人行必有我师嘛），而相反一个老师也可以有很多个学生。这个放到表单里实现其实还不算复杂，可以使用checkbox。但是对于我这种没事找事的人，我就希望使用动态Text来做，结果引出各种问题。下面不废话了，抛出Form封装JSON的源代码，希望大家能够共勉。
 
 {% highlight console %}

@@ -3,10 +3,6 @@ layout: post
 title: SQL 多表分类统计
 category: dataStructure
 ---
-本文为原创日志，转载请注明出处:
-http://www.iznd.com/dataStructure/2012/06/19/SQL-GroupBy.html
-
-
 很久没有用过SQL的多表分类查询功能了，有点生疏了，写个类子复习下。
 
 {% highlight console %}

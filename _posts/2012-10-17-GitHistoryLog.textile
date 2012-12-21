@@ -3,10 +3,6 @@ layout: post
 title: GitHub日志清理
 category: dataStructure
 ---
-本文为原创日志，转载请注明出处:
-http://www.iznd.com/dataStructure/2012/10/17/GitHistoryLog.html
-
-
 本文主要针对，GitHub历史记录过多，造成某些（譬如本人）洁癖患者的各种不适...
 
 假设我们的 commit tree 如下：
